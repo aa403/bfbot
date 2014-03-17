@@ -1,0 +1,13 @@
+web: gunicorn sm.wsgi
+init: python dbrinit.py
+mig: python dbrmig.py
+smig: python dbrsmig.py
+load: python dbrload.py
+dump: python dbrdump.py
+cs: python dbrcs.py
+tell: python tellmesettings.py
+fix: python scripts/fix_broken_things.py
+buildcache: python scripts/buildcache.py
+persist: python scripts/persistchunk.py
+restore: python scripts/restorechunk.py
+clearcache: python scripts/clearcache.py
